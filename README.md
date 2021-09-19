@@ -96,7 +96,7 @@ T:TP TEST   (Hit Key to End)
 
 + Run MicroPython Port Demo
 
-![MicroPythonImage](https://github.com/jmio/testvex/blob/master/mpybin/fbdemo.jpg)
+![MicroPythonImage](https://github.com/jmio/testvex/blob/main/mpybin/fbdemo.jpg)
 
 1. Copy "mpybin/v.hex" and "mpybin/boot.py" to TFCARD
 2. Type "!V.HEX" on monitor prompt to load HEX into SDRAM
