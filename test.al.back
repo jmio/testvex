@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2019-07-20 13:16:10</Project_Created_Time>
+    <TD_Encoding>UTF-8</TD_Encoding>
+    <TD_Version>4.6.18154</TD_Version>
+    <UCode>11011011</UCode>
+    <Name>test</Name>
+    <HardWare>
+        <Family>EG4</Family>
+        <Device>EG4S20BG256</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>top.v</File>
+            <File>al_ip/fontrom.v</File>
+            <File>iobuf.v</File>
+            <File>al_ip/pll.v</File>
+            <File>Briey.v</File>
+            <File>al_ip/textvram.v</File>
+        </Verilog>
+        <VHDL/>
+        <ADC_FILE>io.adc</ADC_FILE>
+        <SDC_FILE>test.sdc</SDC_FILE>
+        <CWC_FILE/>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>top</MODULE>
+        <CREATEINDEX>user</CREATEINDEX>
+    </TOP_MODULE>
+    <Property>
+        <RtlProperty/>
+        <DesignProperty/>
+        <GlobalProperty/>
+        <GateProperty/>
+        <PlaceProperty/>
+        <RouteProperty/>
+        <TimingProperty/>
+        <SimProperty/>
+        <BitgenProperty::GeneralOption>
+            <s>off</s>
+        </BitgenProperty::GeneralOption>
+    </Property>
+    <Project_Settings>
+        <Step_Last_Change>2021-07-29 21:14:27</Step_Last_Change>
+        <Current_Step>0</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

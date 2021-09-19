@@ -1,0 +1,70 @@
+set_pin_assignment {clk24m} { LOCATION = K14; IOSTANDARD = LVCMOS33;  } ##24MHZ
+set_pin_assignment {resetkey} { LOCATION = K16; IOSTANDARD = LVCMOS33;  } ##USER_KEY
+## RGB LEDs, 3 pins
+set_pin_assignment {led[0]} { LOCATION = R3; IOSTANDARD = LVCMOS33;  } ##LED_R, R3
+set_pin_assignment {led[1]} { LOCATION = J14; IOSTANDARD = LVCMOS33;  } ##LED_G, J14
+set_pin_assignment {led[2]} { LOCATION = P13; IOSTANDARD = LVCMOS33;  } ##LED_B, P13
+## UART0 (GPIO 16,17)
+## UART0 (GPIO 16,17)
+set_pin_assignment {rxd1}  { LOCATION = J13; IOSTANDARD = LVCMOS33;  } #
+set_pin_assignment {rxd2}  { LOCATION = M12; IOSTANDARD = LVCMOS33;  } #
+set_pin_assignment {txd} { LOCATION = H13; IOSTANDARD = LVCMOS33;  } #
+
+## JD (used for JTAG connection)
+set_pin_assignment {io_jtag_tdo} { LOCATION = A4; IOSTANDARD = LVCMOS33;  } 	##TDO, B24_N, A4
+set_pin_assignment {io_jtag_tck} { LOCATION = C5; IOSTANDARD = LVCMOS33;  }	 	##TCK, B21_P, C5
+set_pin_assignment {io_jtag_tdi} { LOCATION = B6; IOSTANDARD = LVCMOS33;  } 	##TDI, B21_N, B6
+set_pin_assignment {io_jtag_tms} { LOCATION = C9; IOSTANDARD = LVCMOS33;  } 	##TMS, B10_N, C9
+
+## I2C(TP)
+set_pin_assignment {scl} { LOCATION = P2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; } #
+set_pin_assignment {sda} { LOCATION = R2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; } #
+## DEBUG
+#set_pin_assignment {ps2clk} { LOCATION = C15; IOSTANDARD = LVCMOS33;  } #
+#set_pin_assignment {ps2dat} { LOCATION = C16; IOSTANDARD = LVCMOS33;  } #
+set_pin_assignment {debugc} { LOCATION = C15; IOSTANDARD = LVCMOS33;  } #
+set_pin_assignment {debugd} { LOCATION = B15; IOSTANDARD = LVCMOS33;  } #
+## LCD
+set_pin_assignment {R[0]} { LOCATION = B2; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {R[1]} { LOCATION = A2; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {R[2]} { LOCATION = C3; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {R[3]} { LOCATION = C2; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {R[4]} { LOCATION = C1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {R[5]} { LOCATION = E2; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {R[6]} { LOCATION = D1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {R[7]} { LOCATION = E1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[0]} { LOCATION = E3; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[1]} { LOCATION = E4; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[2]} { LOCATION = F1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[3]} { LOCATION = F2; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[4]} { LOCATION = G1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[5]} { LOCATION = G3; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[6]} { LOCATION = J4; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {G[7]} { LOCATION = J3; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[0]} { LOCATION = J1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[1]} { LOCATION = K1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[2]} { LOCATION = K2; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[3]} { LOCATION = K3; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[4]} { LOCATION = L3; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[5]} { LOCATION = M2; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[6]} { LOCATION = M1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {B[7]} { LOCATION = N1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {LCD_CLK} { LOCATION = L1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {LCD_HSYNC} { LOCATION = P1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {LCD_VSYNC} { LOCATION = R1; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {LCD_DEN} { LOCATION = L4; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {LCD_PWM} { LOCATION = J16; IOSTANDARD = LVCMOS33;  }
+## Dedicated QSPI interface 
+#set_pin_assignment {qspi_cs} { LOCATION = D3; IOSTANDARD = LVCMOS33;  } 	 ##NAND_CS, D3
+#set_pin_assignment {qspi_sck} { LOCATION = H4; IOSTANDARD = LVCMOS33;  } 	 ##NAND_CLK, H4
+#set_pin_assignment {qspi_dq[0]} { LOCATION = B3; IOSTANDARD = LVCMOS33;  }  ##NAND_IO0, B3
+#set_pin_assignment {qspi_dq[1]} { LOCATION = F4; IOSTANDARD = LVCMOS33;  }  ##NAND_IO1, F4
+#set_pin_assignment {qspi_dq[2]} { LOCATION = F5; IOSTANDARD = LVCMOS33;  }  ##NAND_IO2, F5
+#set_pin_assignment {qspi_dq[3]} { LOCATION = B1; IOSTANDARD = LVCMOS33; }  ##NAND_IO3, B1
+## SD interface 
+set_pin_assignment {sd_d2}       { LOCATION = N16; IOSTANDARD = LVCMOS33;  PULLTYPE = PULLUP; } 
+set_pin_assignment {sd_d3_cs}    { LOCATION = N14; IOSTANDARD = LVCMOS33;  PULLTYPE = PULLUP; } 
+set_pin_assignment {sd_cmd_mosi} { LOCATION = H14; IOSTANDARD = LVCMOS33;  PULLTYPE = PULLUP; }
+set_pin_assignment {sd_clk}      { LOCATION = M9;  IOSTANDARD = LVCMOS33;  PULLTYPE = PULLUP; } 
+set_pin_assignment {sd_d0_miso}  { LOCATION = F13; IOSTANDARD = LVCMOS33;  PULLTYPE = PULLUP; }
+set_pin_assignment {sd_d1}       { LOCATION = F14; IOSTANDARD = LVCMOS33;  PULLTYPE = PULLUP; } 
