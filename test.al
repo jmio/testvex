@@ -3,7 +3,7 @@
     <Project_Created_Time></Project_Created_Time>
     <TD_Encoding>UTF-8</TD_Encoding>
     <TD_Version>5.0.30786</TD_Version>
-    <UCode>10000011</UCode>
+    <UCode>11111101</UCode>
     <Name>test</Name>
     <HardWare>
         <Family>EG4</Family>
@@ -105,8 +105,8 @@
     <Configurations>
     </Configurations>
     <Project_Settings>
-        <Step_Last_Change>2021-09-22 23:36:03.920</Step_Last_Change>
-        <Current_Step>30</Current_Step>
+        <Step_Last_Change>2021-09-22 23:54:53.051</Step_Last_Change>
+        <Current_Step>60</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>
 </Project>
