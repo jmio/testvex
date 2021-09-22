@@ -1,0 +1,962 @@
+=========================================================================================================
+Auto created by the td v5.0.30786
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Wed Sep 22 21:28:23 2021
+=========================================================================================================
+
+
+Top Model:                top                                                             
+Device:                   eagle_s20                                                       
+Timing Constraint File:   test.sdc                                                        
+STA Level:                Detail                                                          
+
+=========================================================================================================
+Timing constraint:        clock: u_pll/pll_inst.clkc[1]                                   
+Clock = u_pll/pll_inst.clkc[1], period 19.965ns, rising at 0ns, falling at 9.982ns
+
+13104 endpoints analyzed totally, and 1941280 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 14.051ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/axi_core_cpu/reg0_b31 (6521 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     5.914 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b5.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b31.a[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.807ns  (logic 4.990ns, net 8.817ns, 36% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b5.clk (clk50mp)                 net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b5.q[0]                          clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[5]) net  (fanout = 24)      1.155 r     3.577      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.408 r     3.985
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.444                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.875
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.469                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.817
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.448                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.856
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.545      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.878
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.566                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.997
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.840                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.271
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.948                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.153
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.894                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.318
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.995                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.257
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.900                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.331
+ u_briey/axi_core_cpu/reg0_b31.a[1] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      1.020 r    15.351      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b31                               path2reg0               0.732      16.083
+ Arrival time                                                                       16.083                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b31.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               5.914ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     5.914 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b5.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b31.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.807ns  (logic 4.990ns, net 8.817ns, 36% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b5.clk (clk50mp)                 net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b5.q[0]                          clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[5]) net  (fanout = 24)      1.155 r     3.577      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.408 r     3.985
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.444                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.875
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.469                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.817
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.448                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.856
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.545      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.878
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.566                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.997
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.840                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.271
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.948                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.153
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.894                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.318
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.995                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.257
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.900                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.331
+ u_briey/axi_core_cpu/reg0_b31.a[0] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      1.020 r    15.351      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b31                               path2reg0               0.732      16.083
+ Arrival time                                                                       16.083                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b31.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               5.914ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.023 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b5.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b31.b[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.698ns  (logic 4.915ns, net 8.783ns, 35% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b5.clk (clk50mp)                 net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b5.q[0]                          clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[5]) net  (fanout = 24)      1.155 r     3.577      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.408 r     3.985
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.444                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.875
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.469                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.817
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.448                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.856
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.545      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.878
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.566                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.997
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.840                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.271
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.948                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.153
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.894                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.318
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.995                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.257
+ u_briey/axi_core_cpu/_al_u1688|u_briey/axi_core_cpu/_al_u3429.b[0] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.496 r    13.753                    
+ u_briey/axi_core_cpu/_al_u1688|u_briey/axi_core_cpu/_al_u3429.f[0] cell                    0.431 r    14.184
+ u_briey/axi_core_cpu/reg0_b31.b[1] (u_briey/axi_core_cpu/n402) net  (fanout = 46)      1.133 r    15.317      Briey.v(5745) 
+ u_briey/axi_core_cpu/reg0_b31                               path2reg0               0.657      15.974
+ Arrival time                                                                       15.974                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b31.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.023ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/axi_core_cpu/reg0_b30 (6497 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     5.935 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b5.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b30.a[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.786ns  (logic 4.990ns, net 8.796ns, 36% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b5.clk (clk50mp)                 net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b5.q[0]                          clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[5]) net  (fanout = 24)      1.155 r     3.577      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.408 r     3.985
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.444                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.875
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.469                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.817
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.448                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.856
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.545      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.878
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.566                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.997
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.840                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.271
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.948                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.153
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.894                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.318
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.995                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.257
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.900                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.331
+ u_briey/axi_core_cpu/reg0_b30.a[1] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      0.999 r    15.330      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b30                               path2reg0               0.732      16.062
+ Arrival time                                                                       16.062                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b30.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               5.935ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     5.935 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b5.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b30.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.786ns  (logic 4.990ns, net 8.796ns, 36% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b5.clk (clk50mp)                 net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b5.q[0]                          clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[5]) net  (fanout = 24)      1.155 r     3.577      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.408 r     3.985
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.444                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.875
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.469                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.817
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.448                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.856
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.545      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.878
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.566                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.997
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.840                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.271
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.948                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.153
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.894                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.318
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.995                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.257
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.900                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.331
+ u_briey/axi_core_cpu/reg0_b30.a[0] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      0.999 r    15.330      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b30                               path2reg0               0.732      16.062
+ Arrival time                                                                       16.062                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b30.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               5.935ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.056 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b6|u_briey/axi_core_cpu/reg59_b7.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b30.a[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.665ns  (logic 4.915ns, net 8.750ns, 35% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b6|u_briey/axi_core_cpu/reg59_b7.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b6|u_briey/axi_core_cpu/reg59_b7.q[1] clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[6]) net  (fanout = 24)      1.109 r     3.531      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.333 r     3.864
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.323                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.754
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.348                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.696
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.327                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.735
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.424      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.757
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.445                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.876
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.719                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.150
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.827                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.032
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.773                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.197
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.874                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.136
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.779                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.210
+ u_briey/axi_core_cpu/reg0_b30.a[1] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      0.999 r    15.209      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b30                               path2reg0               0.732      15.941
+ Arrival time                                                                       15.941                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b30.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.056ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/axi_core_cpu/reg0_b28 (6485 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check):     5.935 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b5.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b28.a[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.786ns  (logic 4.990ns, net 8.796ns, 36% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b5.clk (clk50mp)                 net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b5.q[0]                          clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[5]) net  (fanout = 24)      1.155 r     3.577      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.408 r     3.985
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.444                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.875
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.469                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.817
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.448                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.856
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.545      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.878
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.566                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.997
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.840                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.271
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.948                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.153
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.894                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.318
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.995                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.257
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.900                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.331
+ u_briey/axi_core_cpu/reg0_b28.a[1] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      0.999 r    15.330      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b28                               path2reg0               0.732      16.062
+ Arrival time                                                                       16.062                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b28.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               5.935ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     5.935 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b5.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b28.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.786ns  (logic 4.990ns, net 8.796ns, 36% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b5.clk (clk50mp)                 net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b5.q[0]                          clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[5]) net  (fanout = 24)      1.155 r     3.577      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.408 r     3.985
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.444                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.875
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.469                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.817
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.448                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.856
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.545      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.878
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.566                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.997
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.840                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.271
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.948                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.153
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.894                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.318
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.995                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.257
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.900                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.331
+ u_briey/axi_core_cpu/reg0_b28.a[0] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      0.999 r    15.330      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b28                               path2reg0               0.732      16.062
+ Arrival time                                                                       16.062                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b28.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               5.935ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check):     6.056 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/reg59_b6|u_briey/axi_core_cpu/reg59_b7.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/reg0_b28.a[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         13.665ns  (logic 4.915ns, net 8.750ns, 35% logic)               
+ Logic Levels:            12                                                              
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg59_b6|u_briey/axi_core_cpu/reg59_b7.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/reg59_b6|u_briey/axi_core_cpu/reg59_b7.q[1] clk2q                   0.146 r     2.422
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_pcReg[6]) net  (fanout = 24)      1.109 r     3.531      Briey.v(5733) 
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r7_c0_m1.f[0] cell                    0.333 r     3.864
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_do_i7_002) net  (fanout = 1)       0.459 r     4.323                    
+ u_briey/axi_core_cpu/_al_u2731|u_briey/axi_core_cpu/_al_u2736.f[0] cell                    0.431 r     4.754
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.c[0] (u_briey/axi_core_cpu/_al_u2736_o) net  (fanout = 1)       0.594 r     5.348                    
+ u_briey/axi_core_cpu/_al_u2705|u_briey/axi_core_cpu/_al_u2737.f[0] cell                    0.348 r     5.696
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.a[0] (u_briey/axi_core_cpu/_al_u2737_o) net  (fanout = 1)       0.631 r     6.327                    
+ u_briey/axi_core_cpu/_al_u2708|u_briey/axi_core_cpu/reg59_b8_hfnopt2_4.f[0] cell                    0.408 r     6.735
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/_zz_9[2]) net  (fanout = 2)       0.689 r     7.424      Briey.v(14549)
+ u_briey/axi_core_cpu/_al_u2741|u_briey/resetCtrl_axiReset_reg_hfnopt2_10.f[1] cell                    0.333 r     7.757
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.b[1] (u_briey/axi_core_cpu/_al_u2741_o) net  (fanout = 1)       0.688 r     8.445                    
+ u_briey/axi_core_cpu/_al_u2752|u_briey/axi_core_cpu/reg59_b5_hfnopt2_2.f[1] cell                    0.431 r     8.876
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.b[1] (u_briey/axi_core_cpu/_al_u2752_o) net  (fanout = 5)       0.843 r     9.719                    
+ u_briey/axi_core_cpu/_al_u2769|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b11.f[1] cell                    0.431 r    10.150
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.d[0] (u_briey/axi_core_cpu/n2) net  (fanout = 27)      0.677 r    10.827                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_decompressor_throw2BytesReg_reg|u_briey/axi_core_cpu/IBusCachedPlugin_fetchPc_booted_reg.f[0] cell                    0.205 r    11.032
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.a[1] (u_briey/axi_core_cpu/_al_u3304_o) net  (fanout = 45)      0.741 r    11.773                    
+ u_briey/axi_core_cpu/reg28_b1|u_briey/axi_core_cpu/reg28_b0.f[1] cell                    0.424 r    12.197
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.d[1] (u_briey/axi_core_cpu/_al_u3333_o) net  (fanout = 48)      0.677 r    12.874                    
+ u_briey/axi_core_cpu/_al_u3334|u_briey/axi_core_cpu/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_memory_reg.f[1] cell                    0.262 r    13.136
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.b[1] (u_briey/axi_core_cpu/n362_lutinv) net  (fanout = 11)      0.643 r    13.779                    
+ u_briey/axi_core_cpu/reg59_b6_hfnopt2_3|u_briey/axi_core_cpu/reg59_b4.f[1] cell                    0.431 r    14.210
+ u_briey/axi_core_cpu/reg0_b28.a[1] (u_briey/axi_core_cpu/_zz_219) net  (fanout = 47)      0.999 r    15.209      Briey.v(5119) 
+ u_briey/axi_core_cpu/reg0_b28                               path2reg0               0.732      15.941
+ Arrival time                                                                       15.941                  (12 lvl)      
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/reg0_b28.clk (clk50mp)                 net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell setup                                                                         -0.116      21.825
+ clock uncertainty                                                                  -0.000      21.825
+ clock recovergence pessimism                                                        0.172      21.997
+ Required time                                                                      21.997            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               6.056ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l (4 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.156 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b23|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b22.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.a[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         0.418ns  (logic 0.137ns, net 0.281ns, 32% logic)                
+ Logic Levels:            1                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b23|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b22.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b23|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b22.q[0] clk2q                   0.137 r     2.113
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.a[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_address[22]) net  (fanout = 11)      0.281 r     2.394      Briey.v(14559)
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l                         0.000       2.394
+ Arrival time                                                                        2.394                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.134       2.410
+ clock uncertainty                                                                   0.000       2.410
+ clock recovergence pessimism                                                       -0.172       2.238
+ Required time                                                                       2.238            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.156ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      2.531 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b5|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b9.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         2.793ns  (logic 0.361ns, net 2.432ns, 12% logic)                
+ Logic Levels:            2                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b5|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b9.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b5|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b9.q[1] clk2q                   0.137 r     2.113
+ u_briey/systemDebugger_1/reg2_b8|u_briey/systemDebugger_1/reg2_b66.d[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_address[5]) net  (fanout = 9)       0.788 r     2.901      Briey.v(14559)
+ u_briey/systemDebugger_1/reg2_b8|u_briey/systemDebugger_1/reg2_b66.f[1] cell                    0.224 r     3.125
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_write_tag_0_payload_address[0]) net  (fanout = 48)      1.644 r     4.769      Briey.v(14571)
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l                         0.000       4.769
+ Arrival time                                                                        4.769                  (2 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.134       2.410
+ clock uncertainty                                                                   0.000       2.410
+ clock recovergence pessimism                                                       -0.172       2.238
+ Required time                                                                       2.238            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               2.531ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      2.680 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b0|IBusCachedPlugin_cache/add1/ucin.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.a[0] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         2.942ns  (logic 0.539ns, net 2.403ns, 18% logic)                
+ Logic Levels:            2                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b0|IBusCachedPlugin_cache/add1/ucin.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b0|IBusCachedPlugin_cache/add1/ucin.q[1] clk2q                   0.137 r     2.113
+ u_briey/systemDebugger_1/reg2_b8|u_briey/systemDebugger_1/reg2_b66.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_flushCounter[0]) net  (fanout = 2)       0.759 r     2.872      Briey.v(14562)
+ u_briey/systemDebugger_1/reg2_b8|u_briey/systemDebugger_1/reg2_b66.f[1] cell                    0.402 r     3.274
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.a[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_write_tag_0_payload_address[0]) net  (fanout = 48)      1.644 r     4.918      Briey.v(14571)
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l                         0.000       4.918
+ Arrival time                                                                        4.918                  (2 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.134       2.410
+ clock uncertainty                                                                   0.000       2.410
+ clock recovergence pessimism                                                       -0.172       2.238
+ Required time                                                                       2.238            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               2.680ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l (4 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.167 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b23|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b22.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.b[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         0.429ns  (logic 0.137ns, net 0.292ns, 31% logic)                
+ Logic Levels:            1                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b23|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b22.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b23|u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg1_b22.q[1] clk2q                   0.137 r     2.113
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_address[23]) net  (fanout = 10)      0.292 r     2.405      Briey.v(14559)
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l                         0.000       2.405
+ Arrival time                                                                        2.405                  (1 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.134       2.410
+ clock uncertainty                                                                   0.000       2.410
+ clock recovergence pessimism                                                       -0.172       2.238
+ Required time                                                                       2.238            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.167ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      2.156 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b7_al_u3536.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.b[0] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         2.418ns  (logic 0.326ns, net 2.092ns, 13% logic)                
+ Logic Levels:            2                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b7_al_u3536.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b7_al_u3536.q[0] clk2q                   0.137 r     2.113
+ u_briey/systemDebugger_1/reg2_b65|u_briey/systemDebugger_1/reg2_b4.c[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_flushCounter[7]) net  (fanout = 34)      0.602 r     2.715      Briey.v(14562)
+ u_briey/systemDebugger_1/reg2_b65|u_briey/systemDebugger_1/reg2_b4.f[1] cell                    0.189 r     2.904
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_write_tag_0_payload_address[1]) net  (fanout = 48)      1.490 r     4.394      Briey.v(14571)
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l                         0.000       4.394
+ Arrival time                                                                        4.394                  (2 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.134       2.410
+ clock uncertainty                                                                   0.000       2.410
+ clock recovergence pessimism                                                       -0.172       2.238
+ Required time                                                                       2.238            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               2.156ns          
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check):      2.196 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b2|IBusCachedPlugin_cache/reg2_b1.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.b[0] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         2.458ns  (logic 0.431ns, net 2.027ns, 17% logic)                
+ Logic Levels:            2                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b2|IBusCachedPlugin_cache/reg2_b1.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/reg2_b2|IBusCachedPlugin_cache/reg2_b1.q[0] clk2q                   0.137 r     2.113
+ u_briey/systemDebugger_1/reg2_b65|u_briey/systemDebugger_1/reg2_b4.b[1] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_flushCounter[1]) net  (fanout = 2)       0.537 r     2.650      Briey.v(14562)
+ u_briey/systemDebugger_1/reg2_b65|u_briey/systemDebugger_1/reg2_b4.f[1] cell                    0.294 r     2.944
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.b[0] (u_briey/axi_core_cpu/IBusCachedPlugin_cache/lineLoader_write_tag_0_payload_address[1]) net  (fanout = 48)      1.490 r     4.434      Briey.v(14571)
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l                         0.000       4.434
+ Arrival time                                                                        4.434                  (2 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/IBusCachedPlugin_cache/al_ram_ways_0_tags_r4_c3_l.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.134       2.410
+ clock uncertainty                                                                   0.000       2.410
+ clock recovergence pessimism                                                       -0.172       2.238
+ Required time                                                                       2.238            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               2.196ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/reg6_b4|u_briey/reg6_b6 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.244 ns                                                        
+ Start Point:             u_briey/reg2_b4.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/reg6_b4|u_briey/reg6_b6.mi[1] (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         0.527ns  (logic 0.256ns, net 0.271ns, 48% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/reg2_b4.clk (clk50mp)                               net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/reg2_b4.q[0]                                        clk2q                   0.137 r     2.113
+ u_briey/reg6_b4|u_briey/reg6_b6.mi[1] (u_briey/axi_core_cpu_dBus_cmd_m2sPipe_rData_data[4]) net  (fanout = 1)       0.271 r     2.384      Briey.v(644)  
+ u_briey/reg6_b4|u_briey/reg6_b6                             path2reg1               0.119       2.503
+ Arrival time                                                                        2.503                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/reg6_b4|u_briey/reg6_b6.clk (clk50mp)               net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell hold                                                                           0.074       2.350
+ clock uncertainty                                                                   0.000       2.350
+ clock recovergence pessimism                                                       -0.091       2.259
+ Required time                                                                       2.259            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.244ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Recovery checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_briey/systemDebugger_1/reg0_b0|u_briey/systemDebugger_1/reg0_b2 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (recovery check):  16.676 ns                                                       
+ Start Point:             u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/systemDebugger_1/reg0_b0|u_briey/systemDebugger_1/reg0_b2.sr (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         2.861ns  (logic 0.232ns, net 2.629ns, 8% logic)                 
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.q[0] clk2q                   0.146 r     2.422
+ u_briey/systemDebugger_1/reg0_b0|u_briey/systemDebugger_1/reg0_b2.sr (u_briey/resetCtrl_systemReset) net  (fanout = 10)      2.629 r     5.051      Briey.v(628)  
+ u_briey/systemDebugger_1/reg0_b0|u_briey/systemDebugger_1/reg0_b2 path2reg                0.086       5.137
+ Arrival time                                                                        5.137                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/systemDebugger_1/reg0_b0|u_briey/systemDebugger_1/reg0_b2.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell recovery                                                                      -0.300      21.641
+ clock uncertainty                                                                  -0.000      21.641
+ clock recovergence pessimism                                                        0.172      21.813
+ Required time                                                                      21.813            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              16.676ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/jtagBridge_1/flowCCByToggle_1/outputArea_flow_regNext_valid_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (recovery check):  16.676 ns                                                       
+ Start Point:             u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/jtagBridge_1/flowCCByToggle_1/outputArea_flow_regNext_valid_reg.sr (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         2.861ns  (logic 0.232ns, net 2.629ns, 8% logic)                 
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.q[0] clk2q                   0.146 r     2.422
+ u_briey/jtagBridge_1/flowCCByToggle_1/outputArea_flow_regNext_valid_reg.sr (u_briey/resetCtrl_systemReset) net  (fanout = 10)      2.629 r     5.051      Briey.v(628)  
+ u_briey/jtagBridge_1/flowCCByToggle_1/outputArea_flow_regNext_valid_reg path2reg                0.086       5.137
+ Arrival time                                                                        5.137                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/jtagBridge_1/flowCCByToggle_1/outputArea_flow_regNext_valid_reg.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell recovery                                                                      -0.300      21.641
+ clock uncertainty                                                                  -0.000      21.641
+ clock recovergence pessimism                                                        0.172      21.813
+ Required time                                                                      21.813            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              16.676ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/systemDebugger_1/reg0_b1 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (recovery check):  16.766 ns                                                       
+ Start Point:             u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/systemDebugger_1/reg0_b1.sr (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         2.771ns  (logic 0.232ns, net 2.539ns, 8% logic)                 
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ launch clock edge                                                                   0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/_al_u3462|u_briey/resetCtrl_systemReset_reg.q[0] clk2q                   0.146 r     2.422
+ u_briey/systemDebugger_1/reg0_b1.sr (u_briey/resetCtrl_systemReset) net  (fanout = 10)      2.539 r     4.961      Briey.v(628)  
+ u_briey/systemDebugger_1/reg0_b1                            path2reg                0.086       5.047
+ Arrival time                                                                        5.047                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/systemDebugger_1/reg0_b1.clk (clk50mp)              net                     1.976       1.976      top.v(49)     
+ capture clock edge                                                                 19.965      21.941
+---------------------------------------------------------------------------------------------------------
+ cell recovery                                                                      -0.300      21.641
+ clock uncertainty                                                                  -0.000      21.641
+ clock recovergence pessimism                                                        0.172      21.813
+ Required time                                                                      21.813            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                              16.766ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Removal checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_1_reg|u_briey/axi_ram2_io_axi_arbiter_io_output_arw_halfPipe_regs_valid_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (removal check):   0.096 ns                                                        
+ Start Point:             u_briey/_al_u1522|u_briey/resetCtrl_axiReset_reg_hfnopt2_13.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_1_reg|u_briey/axi_ram2_io_axi_arbiter_io_output_arw_halfPipe_regs_valid_reg.sr (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         0.524ns  (logic 0.202ns, net 0.322ns, 38% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/_al_u1522|u_briey/resetCtrl_axiReset_reg_hfnopt2_13.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/_al_u1522|u_briey/resetCtrl_axiReset_reg_hfnopt2_13.q[0] clk2q                   0.137 r     2.113
+ u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_1_reg|u_briey/axi_ram2_io_axi_arbiter_io_output_arw_halfPipe_regs_valid_reg.sr (u_briey/resetCtrl_axiReset_hfnopt2_13) net  (fanout = 29)      0.322 r     2.435      Briey.v(629)  
+ u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_1_reg|u_briey/axi_ram2_io_axi_arbiter_io_output_arw_halfPipe_regs_valid_reg path2reg                0.065       2.500
+ Arrival time                                                                        2.500                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_1_reg|u_briey/axi_ram2_io_axi_arbiter_io_output_arw_halfPipe_regs_valid_reg.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell removal                                                                        0.300       2.576
+ clock uncertainty                                                                   0.000       2.576
+ clock recovergence pessimism                                                       -0.172       2.404
+ Required time                                                                       2.404            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.096ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/_al_u1414|u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_2_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (removal check):   0.096 ns                                                        
+ Start Point:             u_briey/_al_u1522|u_briey/resetCtrl_axiReset_reg_hfnopt2_13.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/_al_u1414|u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_2_reg.sr (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         0.524ns  (logic 0.202ns, net 0.322ns, 38% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/_al_u1522|u_briey/resetCtrl_axiReset_reg_hfnopt2_13.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/_al_u1522|u_briey/resetCtrl_axiReset_reg_hfnopt2_13.q[0] clk2q                   0.137 r     2.113
+ u_briey/_al_u1414|u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_2_reg.sr (u_briey/resetCtrl_axiReset_hfnopt2_13) net  (fanout = 29)      0.322 r     2.435      Briey.v(629)  
+ u_briey/_al_u1414|u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_2_reg path2reg                0.065       2.500
+ Arrival time                                                                        2.500                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/_al_u1414|u_briey/axi_ram2_io_axi_arbiter/cmdArbiter_io_output_fork/_zz_2_reg.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell removal                                                                        0.300       2.576
+ clock uncertainty                                                                   0.000       2.576
+ clock recovergence pessimism                                                       -0.172       2.404
+ Required time                                                                       2.404            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.096ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point u_briey/axi_core_cpu/_al_u3364|u_briey/axi_core_cpu/CsrPlugin_interrupt_valid_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (removal check):   0.183 ns                                                        
+ Start Point:             u_briey/axi_core_cpu/_al_u2947|u_briey/resetCtrl_axiReset_reg_hfnopt2_7.clk (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ End Point:               u_briey/axi_core_cpu/_al_u3364|u_briey/axi_core_cpu/CsrPlugin_interrupt_valid_reg.sr (rising edge triggered by clock u_pll/pll_inst.clkc[1])
+ Clock group:             u_pll/pll_inst.refclk                                           
+ Data Path Delay:         0.504ns  (logic 0.202ns, net 0.302ns, 40% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/_al_u2947|u_briey/resetCtrl_axiReset_reg_hfnopt2_7.clk (clk50mp) net                     1.976       1.976      top.v(49)     
+ launch clock edge                                                                   0.000       1.976
+---------------------------------------------------------------------------------------------------------
+ u_briey/axi_core_cpu/_al_u2947|u_briey/resetCtrl_axiReset_reg_hfnopt2_7.q[0] clk2q                   0.137 r     2.113
+ u_briey/axi_core_cpu/_al_u3364|u_briey/axi_core_cpu/CsrPlugin_interrupt_valid_reg.sr (u_briey/resetCtrl_axiReset_hfnopt2_7) net  (fanout = 39)      0.302 r     2.415      Briey.v(629)  
+ u_briey/axi_core_cpu/_al_u3364|u_briey/axi_core_cpu/CsrPlugin_interrupt_valid_reg path2reg                0.065       2.480
+ Arrival time                                                                        2.480                  (0 lvl)       
+
+ source latency                                                                      0.000       0.000                    
+ u_briey/axi_core_cpu/_al_u3364|u_briey/axi_core_cpu/CsrPlugin_interrupt_valid_reg.clk (clk50mp) net                     2.276       2.276      top.v(49)     
+ capture clock edge                                                                  0.000       2.276
+---------------------------------------------------------------------------------------------------------
+ cell removal                                                                        0.300       2.576
+ clock uncertainty                                                                   0.000       2.576
+ clock recovergence pessimism                                                       -0.279       2.297
+ Required time                                                                       2.297            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                               0.183ns          
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 1941280 (STA coverage = 96.03%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: 5.914, minimal hold slack: 0.096
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  u_pll/pll_inst.clkc[1] (50.088MHz)            14.051ns      71.169MHz        0.571ns      2531        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: No clock constraint on 3 clock net(s): 
+	LCD_CLK_pad
+	clk24m_pad
+	u_briey/jtagBridge_1/io_jtag_tck_pad
+
+---------------------------------------------------------------------------------------------------------
