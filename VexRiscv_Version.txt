@@ -1,3 +1,13 @@
+git clone https://github.com/SpinalHDL/SpinalHDL
+cd SpinalHDL
+git checkout 73c8d8e2
+git cherry-pick 2224b25
+
 git clone https://github.com/SpinalHDL/VexRiscv.git
-git checkout 2de35e6116e623e2d5465f753a1c84104fa127cb
+cd VexRiscv
+git checkout 68e704f3092be640aa92c876cf78702a83167f94
+
+
+cp (Project)/build.sbt.dev160 (VexRiscv)/build.sbt
+
 (ignore warning)
