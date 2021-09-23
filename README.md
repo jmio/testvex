@@ -35,9 +35,11 @@ set_pin_assignment {io_jtag_tms} { LOCATION = C9; IOSTANDARD = LVCMOS33;  } 	##T
 
 + make.exe
 
-+ openocd for vexriscv
-https://github.com/SpinalHDL/openocd_riscv
-(libUSB FT2232 Dongle, Windows Binary included)
++ openocd for vexriscv (Windows Binary included)
+https://github.com/SpinalHDL/openocd_riscv  
+
+    + libUSB FT2232 Dongle (Need [HBird_Driver.exe](https://bigbits.oss-cn-qingdao.aliyuncs.com/Arduino_for_Licheetang_with_hbird_e203_mini/Driver/HBird_Driver.exe))
+    + DAPLink Dongle (You can [made with LPC11U35](https://jmio.github.io/use_11u35_as_daplink.html)) 
 
 + The folder names are embedded in "tasks.json" and "launch.json", so you need to rewrite them.
 Make sure that riscv-none-embed-gcc, make and openocd work properly.
