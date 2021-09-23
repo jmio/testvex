@@ -1,8 +1,10 @@
 # Briey SoC on Sipeed Tang Primer
 
 ## About Briey Soc
-+ The Briey SoC is a sample SoC included in the VexRiscv project.
-https://github.com/SpinalHDL/VexRiscv
++ The [Briey SoC](https://github.com/SpinalHDL/VexRiscv#briey-soc) is a sample SoC included in the [VexRiscv](https://github.com/SpinalHDL/VexRiscv).
+
+## Similar Projects
+- [Briey SoC on ICESugar Pro(Lattice ECP5)](https://github.com/jmio/ECP5_Brieysoc)
 
 ## Supported HW
 + UART (Briey SoC, 115200bps)
