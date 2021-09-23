@@ -8,6 +8,8 @@
 
 ## Supported HW
 + UART (Briey SoC, 115200bps)
+   + Both rxd1 and rxd2 can be used in the same way (Internally OR).
+[I have rewritten the firmware of the M5Stack CardKB to support UART](https://github.com/jmio/CardKB_Serial) and connected it to rxd2, so I can use it standalone!
 ```
 set_pin_assignment {rxd1}  { LOCATION = J13; IOSTANDARD = LVCMOS33;  } #
 set_pin_assignment {rxd2}  { LOCATION = M12; IOSTANDARD = LVCMOS33;  } #
@@ -19,10 +21,10 @@ set_pin_assignment {txd} { LOCATION = H13; IOSTANDARD = LVCMOS33;  } #
 + TFCARD (Intel Hex Loader Support on Sample FW)
 + JTAG DEBUG (VexRiscv)
 ```
-set_pin_assignment {io_jtag_tdo} { LOCATION = A4; IOSTANDARD = LVCMOS33;  } 	##TDO, B24_N, A4
-set_pin_assignment {io_jtag_tck} { LOCATION = C5; IOSTANDARD = LVCMOS33;  }	 	##TCK, B21_P, C5
-set_pin_assignment {io_jtag_tdi} { LOCATION = B6; IOSTANDARD = LVCMOS33;  } 	##TDI, B21_N, B6
-set_pin_assignment {io_jtag_tms} { LOCATION = C9; IOSTANDARD = LVCMOS33;  } 	##TMS, B10_N, C9
+set_pin_assignment {io_jtag_tdo} { LOCATION = A4; IOSTANDARD = LVCMOS33;  }   ##TDO, B24_N, A4
+set_pin_assignment {io_jtag_tck} { LOCATION = C5; IOSTANDARD = LVCMOS33;  }   ##TCK, B21_P, C5
+set_pin_assignment {io_jtag_tdi} { LOCATION = B6; IOSTANDARD = LVCMOS33;  }   ##TDI, B21_N, B6
+set_pin_assignment {io_jtag_tms} { LOCATION = C9; IOSTANDARD = LVCMOS33;  }   ##TMS, B10_N, C9
 
 ```
 
@@ -45,6 +47,8 @@ https://github.com/SpinalHDL/openocd_riscv
 
 + The folder names are embedded in "tasks.json" and "launch.json", so you need to rewrite them.
 Make sure that riscv-none-embed-gcc, make and openocd work properly.
+
++ [Memory Map File](./SipeedTangBriey_MemoryMap.xlsx)
 
 Example of embedding
 ```
