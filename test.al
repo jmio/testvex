@@ -93,6 +93,9 @@
         <CREATEINDEX></CREATEINDEX>
     </TOP_MODULE>
     <Property>
+        <RtlProperty>
+            <keep_hierarchy>all</keep_hierarchy>
+        </RtlProperty>
         <BitgenProperty::GeneralOption>
             <s>off</s>
         </BitgenProperty::GeneralOption>
@@ -102,8 +105,8 @@
     <Configurations>
     </Configurations>
     <Project_Settings>
-        <Step_Last_Change>2021-09-23 09:14:50.847</Step_Last_Change>
-        <Current_Step>60</Current_Step>
+        <Step_Last_Change>2021-09-26 11:37:33.463</Step_Last_Change>
+        <Current_Step>30</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>
 </Project>
