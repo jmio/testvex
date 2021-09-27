@@ -104,6 +104,15 @@ T:TP TEST   (Hit Key to End)
 
 + Run MicroPython Port Demo
 
+   + [micropython port for this monitor](https://github.com/jmio/micropython)
+
+```
+cd port/rv32
+make V=1
+```
+
+then v.hex and v.elf created at ports/rv32/build/.
+
 ![MicroPythonImage](https://github.com/jmio/testvex/blob/main/mpybin/fbdemo.jpg)
 
 1. Copy "mpybin/v.hex" and "mpybin/boot.py" to TFCARD
