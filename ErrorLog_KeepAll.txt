@@ -159,40 +159,40 @@ HDL-1007 : elaborate module EG_LOGIC_BRAM(DATA_WIDTH_A=8,DATA_WIDTH_B=8,ADDR_WID
 HDL-1007 : elaborate module textvram in al_ip/textvram.v(14)
 HDL-1007 : elaborate module EG_LOGIC_BRAM(DATA_WIDTH_A=8,DATA_WIDTH_B=8,ADDR_WIDTH_A=12,ADDR_WIDTH_B=12,DATA_DEPTH_A=4096,DATA_DEPTH_B=4096,BYTE_ENABLE=8,BYTE_A=1,BYTE_B=1,IMPLEMENT="32K") in C:/Anlogic/TD5.0.30786/arch/eagle_macro.v(1032)
 HDL-1007 : elaborate module Briey in Briey.v(7)
-HDL-1007 : elaborate module BufferCC_10 in Briey.v(13159)
-HDL-1007 : elaborate module Axi4SharedOnChipRam in Briey.v(12779)
+HDL-1007 : elaborate module BufferCC_10 in Briey.v(13179)
+HDL-1007 : elaborate module Axi4SharedOnChipRam in Briey.v(12799)
 HDL-1007 : elaborate module Axi4SharedOnChipRam_1 in Briey.v(12407)
 HDL-1007 : elaborate module Axi4SharedSdramCtrl in Briey.v(12010)
-HDL-1007 : elaborate module SdramCtrl in Briey.v(16541)
-HDL-1007 : elaborate module StreamFifoLowLatency in Briey.v(18485)
+HDL-1007 : elaborate module SdramCtrl in Briey.v(16561)
+HDL-1007 : elaborate module StreamFifoLowLatency in Briey.v(18505)
 HDL-1007 : elaborate module Axi4SharedToApb3Bridge in Briey.v(11802)
 HDL-1007 : elaborate module Apb3Gpio in Briey.v(11714)
-HDL-1007 : elaborate module BufferCC_6 in Briey.v(16522)
+HDL-1007 : elaborate module BufferCC_6 in Briey.v(16542)
 HDL-1007 : elaborate module PinsecTimerCtrl in Briey.v(11247)
-HDL-1007 : elaborate module BufferCC_8 in Briey.v(16494)
-HDL-1007 : elaborate module Prescaler in Briey.v(16471)
-HDL-1007 : elaborate module Timer in Briey.v(16425)
-HDL-1007 : elaborate module Timer_1 in Briey.v(16379)
-HDL-1007 : elaborate module InterruptCtrl in Briey.v(16352)
+HDL-1007 : elaborate module BufferCC_8 in Briey.v(16514)
+HDL-1007 : elaborate module Prescaler in Briey.v(16491)
+HDL-1007 : elaborate module Timer in Briey.v(16445)
+HDL-1007 : elaborate module Timer_1 in Briey.v(16399)
+HDL-1007 : elaborate module InterruptCtrl in Briey.v(16372)
 HDL-1007 : elaborate module Apb3UartCtrl in Briey.v(10832)
-HDL-1007 : elaborate module UartCtrl in Briey.v(16223)
-HDL-1007 : elaborate module UartCtrlTx in Briey.v(18258)
-HDL-1007 : elaborate module UartCtrlRx in Briey.v(17964)
-HDL-1007 : elaborate module BufferCC in Briey.v(18703)
-HDL-1007 : elaborate module StreamFifo in Briey.v(16072)
+HDL-1007 : elaborate module UartCtrl in Briey.v(16243)
+HDL-1007 : elaborate module UartCtrlTx in Briey.v(18278)
+HDL-1007 : elaborate module UartCtrlRx in Briey.v(17984)
+HDL-1007 : elaborate module BufferCC in Briey.v(18723)
+HDL-1007 : elaborate module StreamFifo in Briey.v(16092)
 HDL-1007 : elaborate module MyAxi4VgaCtrl in Briey.v(10479)
-HDL-1007 : elaborate module VideoDma in Briey.v(15591)
-HDL-1007 : elaborate module StreamFifoCC in Briey.v(17785)
-HDL-1007 : elaborate module BufferCC_1 in Briey.v(18679)
-HDL-1007 : elaborate module BufferCC_2 in Briey.v(18655)
-HDL-1007 : elaborate module BufferCC_3 in Briey.v(17766)
-HDL-1007 : elaborate module BufferCC_9 in Briey.v(15572)
-HDL-1007 : elaborate module VgaCtrl in Briey.v(15446)
-HDL-1007 : elaborate module PulseCCByToggle in Briey.v(15403)
+HDL-1007 : elaborate module VideoDma in Briey.v(15611)
+HDL-1007 : elaborate module StreamFifoCC in Briey.v(17805)
+HDL-1007 : elaborate module BufferCC_1 in Briey.v(18699)
+HDL-1007 : elaborate module BufferCC_2 in Briey.v(18675)
+HDL-1007 : elaborate module BufferCC_3 in Briey.v(17786)
+HDL-1007 : elaborate module BufferCC_9 in Briey.v(15592)
+HDL-1007 : elaborate module VgaCtrl in Briey.v(15466)
+HDL-1007 : elaborate module PulseCCByToggle in Briey.v(15423)
 HDL-1007 : elaborate module VexRiscv in Briey.v(5152)
-HDL-1007 : elaborate module InstructionCache in Briey.v(15154)
-HDL-1007 : elaborate module DataCache in Briey.v(14330)
-HDL-5007 WARNING: system task 'display' ignored for synthesis in Briey.v(15126)
+HDL-1007 : elaborate module InstructionCache in Briey.v(15174)
+HDL-1007 : elaborate module DataCache in Briey.v(14350)
+HDL-5007 WARNING: system task 'display' ignored for synthesis in Briey.v(15146)
 HDL-5007 WARNING: net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver in Briey.v(5217)
 HDL-5007 WARNING: net 'IBusCachedPlugin_cache_io_cpu_decode_isValid' does not have a driver in Briey.v(5219)
 HDL-5007 WARNING: net 'IBusCachedPlugin_cache_io_cpu_decode_isStuck' does not have a driver in Briey.v(5220)
@@ -214,28 +214,28 @@ HDL-5007 WARNING: net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' d
 HDL-1007 : elaborate module StreamFork_4 in Briey.v(5062)
 HDL-1007 : elaborate module BufferCC_12 in Briey.v(5043)
 HDL-1007 : elaborate module JtagBridge in Briey.v(4725)
-HDL-1007 : elaborate module FlowCCByToggle in Briey.v(14264)
-HDL-1007 : elaborate module BufferCC_5 in Briey.v(17745)
+HDL-1007 : elaborate module FlowCCByToggle in Briey.v(14284)
+HDL-1007 : elaborate module BufferCC_5 in Briey.v(17765)
 HDL-1007 : elaborate module SystemDebugger in Briey.v(4638)
 HDL-1007 : elaborate module Axi4ReadOnlyDecoder in Briey.v(4415)
-HDL-1007 : elaborate module Axi4ReadOnlyErrorSlave in Briey.v(14205)
+HDL-1007 : elaborate module Axi4ReadOnlyErrorSlave in Briey.v(14225)
 HDL-1007 : elaborate module Axi4SharedDecoder in Briey.v(3997)
-HDL-1007 : elaborate module Axi4SharedErrorSlave in Briey.v(14116)
+HDL-1007 : elaborate module Axi4SharedErrorSlave in Briey.v(14136)
 HDL-1007 : elaborate module Axi4ReadOnlyDecoder_1 in Briey.v(3852)
-HDL-1007 : elaborate module Axi4ReadOnlyErrorSlave_1 in Briey.v(14059)
+HDL-1007 : elaborate module Axi4ReadOnlyErrorSlave_1 in Briey.v(14079)
 HDL-1007 : elaborate module Axi4SharedArbiter in Briey.v(3548)
-HDL-1007 : elaborate module StreamArbiter in Briey.v(13965)
-HDL-1007 : elaborate module StreamFork in Briey.v(13880)
-HDL-1007 : elaborate module StreamFifoLowLatency_1 in Briey.v(13755)
+HDL-1007 : elaborate module StreamArbiter in Briey.v(13985)
+HDL-1007 : elaborate module StreamFork in Briey.v(13900)
+HDL-1007 : elaborate module StreamFifoLowLatency_1 in Briey.v(13775)
 HDL-1007 : elaborate module Axi4SharedArbiter_1 in Briey.v(3244)
-HDL-1007 : elaborate module StreamArbiter_1 in Briey.v(13661)
-HDL-1007 : elaborate module StreamFork_1 in Briey.v(13576)
+HDL-1007 : elaborate module StreamArbiter_1 in Briey.v(13681)
+HDL-1007 : elaborate module StreamFork_1 in Briey.v(13596)
 HDL-1007 : elaborate module Axi4SharedArbiter_2 in Briey.v(2889)
-HDL-1007 : elaborate module StreamArbiter_2 in Briey.v(13425)
-HDL-1007 : elaborate module StreamFork_2 in Briey.v(13340)
+HDL-1007 : elaborate module StreamArbiter_2 in Briey.v(13445)
+HDL-1007 : elaborate module StreamFork_2 in Briey.v(13360)
 HDL-1007 : elaborate module Axi4SharedArbiter_3 in Briey.v(2655)
-HDL-1007 : elaborate module StreamArbiter_3 in Briey.v(13264)
-HDL-1007 : elaborate module StreamFork_3 in Briey.v(13179)
+HDL-1007 : elaborate module StreamArbiter_3 in Briey.v(13284)
+HDL-1007 : elaborate module StreamFork_3 in Briey.v(13199)
 HDL-1007 : elaborate module Apb3Decoder in Briey.v(2601)
 HDL-1007 : elaborate module Apb3Router in Briey.v(2430)
 HDL-5007 WARNING: net 'axi_core_cpu_dBus_rsp_payload_last' does not have a driver in Briey.v(67)
@@ -247,9 +247,9 @@ HDL-5007 WARNING: net 'io_gpioB_read[31]' does not have a driver in top.v(105)
 HDL-5007 WARNING: net 'APB_PRDATA[31]' does not have a driver in top.v(209)
 HDL-1200 : Current top model is top
 HDL-1100 : Inferred 19 RAMs.
-RUN-1003 : finish command "elaborate -top top" in  5.373977s wall, 5.234375s user + 0.171875s system = 5.406250s CPU (100.6%)
+RUN-1003 : finish command "elaborate -top top" in  5.210605s wall, 5.234375s user + 0.140625s system = 5.375000s CPU (103.2%)
 
-RUN-1004 : used memory is 946 MB, reserved memory is 950 MB, peak memory is 2611 MB
+RUN-1004 : used memory is 1097 MB, reserved memory is 1091 MB, peak memory is 2975 MB
 RUN-1002 : start command "read_adc io.adc"
 RUN-1002 : start command "set_pin_assignment clk24m  LOCATION = K14; IOSTANDARD = LVCMOS33;  "
 RUN-1002 : start command "set_pin_assignment resetkey  LOCATION = K16; IOSTANDARD = LVCMOS33;  "
@@ -1438,7 +1438,7 @@ SYN-1015 : Optimize round 2, 8 better
 SYN-1014 : Optimize round 3
 SYN-1032 : 61/8 useful/useless nets, 32/0 useful/useless insts
 SYN-1015 : Optimize round 3, 0 better
-SYN-5011 WARNING: Undriven pin: model "UartCtrl" / inst "rx" in Briey.v(16281) / pin "io_read_ready"
+SYN-5011 WARNING: Undriven pin: model "UartCtrl" / inst "rx" in Briey.v(16301) / pin "io_read_ready"
 SYN-5025 WARNING: Using 0 for all undriven pins and nets
 SYN-1014 : Optimize round 1
 SYN-1015 : Optimize round 1, 0 better
@@ -1666,9 +1666,9 @@ SYN-1015 : Optimize round 1, 0 better
 SYN-1014 : Optimize round 1
 SYN-1015 : Optimize round 1, 0 better
 SYN-1032 : 21407/9 useful/useless nets, 13476/13 useful/useless insts
-RUN-1003 : finish command "optimize_rtl" in  15.414222s wall, 15.015625s user + 0.640625s system = 15.656250s CPU (101.6%)
+RUN-1003 : finish command "optimize_rtl" in  15.435944s wall, 16.171875s user + 1.140625s system = 17.312500s CPU (112.2%)
 
-RUN-1004 : used memory is 1036 MB, reserved memory is 1053 MB, peak memory is 2611 MB
+RUN-1004 : used memory is 1118 MB, reserved memory is 1116 MB, peak memory is 2975 MB
 RUN-1002 : start command "report_area -file test_rtl.area"
 RUN-1001 : standard
 ***Report Model: top***
@@ -1809,9 +1809,9 @@ RUN-1001 : Exported timing constraints
 RUN-1001 : Exported IO constraints
 RUN-1001 : Exported Inst constraints
 RUN-1001 : Exported flow parameters
-RUN-1003 : finish command "export_db test_rtl.db" in  3.991656s wall, 3.562500s user + 0.421875s system = 3.984375s CPU (99.8%)
+RUN-1003 : finish command "export_db test_rtl.db" in  4.321844s wall, 4.015625s user + 0.328125s system = 4.343750s CPU (100.5%)
 
-RUN-1004 : used memory is 1086 MB, reserved memory is 1117 MB, peak memory is 2611 MB
+RUN-1004 : used memory is 974 MB, reserved memory is 963 MB, peak memory is 2975 MB
 RUN-1002 : start command "optimize_gate -maparea test_gate.area"
 RUN-1001 : Open license file C:/Anlogic/TD5.0.30786/license/Anlogic.lic
 RUN-1001 : Print Gate Property
@@ -2542,9 +2542,9 @@ TMR-2505 : Start building timing graph for model top.
 TMR-2506 : Build timing graph completely. Port num: 28, tpin num: 335484, tnet num: 85928, tinst num: 58573, tnode num: 399645, tedge num: 440597.
 TMR-2508 : Levelizing timing graph completed, there are 101 levels in total.
 TMR-2501 : Timing graph initialized successfully.
-RUN-1003 : finish command "start_timer -prepack" in  3.061762s wall, 2.968750s user + 0.093750s system = 3.062500s CPU (100.0%)
+RUN-1003 : finish command "start_timer -prepack" in  3.293217s wall, 3.250000s user + 0.046875s system = 3.296875s CPU (100.1%)
 
-RUN-1004 : used memory is 1589 MB, reserved memory is 1633 MB, peak memory is 2611 MB
+RUN-1004 : used memory is 1584 MB, reserved memory is 1629 MB, peak memory is 2975 MB
 TMR-2503 : Start to update net delay, extr mode = 2.
 TMR-2504 : Update delay of 85928 nets completely.
 TMR-2502 : Annotate delay completely, extr mode = 2.
@@ -2565,426 +2565,426 @@ SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 225 (2.93), #lev = 4 (1.01)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 225 (2.93), #lev = 4 (1.01)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 874.19 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 591.15 sec
 SYN-3001 : Mapper mapped 288 instances into 234 LUTs, name keeping = 99%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 96 (4.02), #lev = 3 (2.38)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 96 (4.02), #lev = 3 (2.38)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 874.56 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 591.58 sec
 SYN-3001 : Mapper mapped 174 instances into 96 LUTs, name keeping = 43%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 62 (4.24), #lev = 7 (1.94)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 61 (4.25), #lev = 8 (2.19)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 874.75 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 591.82 sec
 SYN-3001 : Mapper mapped 145 instances into 61 LUTs, name keeping = 78%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 11 (4.00), #lev = 3 (1.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 11 (4.00), #lev = 3 (1.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 874.91 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 592.01 sec
 SYN-3001 : Mapper mapped 29 instances into 12 LUTs, name keeping = 91%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 7 (2.86), #lev = 2 (0.91)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 8 (2.50), #lev = 2 (1.09)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 875.01 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 592.11 sec
 SYN-3001 : Mapper mapped 20 instances into 10 LUTs, name keeping = 70%.
 SYN-3001 : Mapper removed 2 lut buffers
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=2, #lut = 5 (2.00), #lev = 2 (0.86)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=2, #lut = 5 (2.00), #lev = 2 (0.86)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 875.08 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 592.20 sec
 SYN-3001 : Mapper mapped 6 instances into 5 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=3, #lut = 4 (2.50), #lev = 2 (1.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=3, #lut = 4 (2.50), #lev = 2 (1.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 875.15 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 592.27 sec
 SYN-3001 : Mapper mapped 11 instances into 4 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 875.22 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 592.36 sec
 SYN-3001 : Mapper mapped 14 instances into 5 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 875.30 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 592.44 sec
 SYN-3001 : Mapper mapped 16 instances into 9 LUTs, name keeping = 100%.
 SYN-3001 : X or Z is treated as constant in optimizing instance _al_const_x.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 1994 (3.83), #lev = 11 (4.17)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 1978 (3.82), #lev = 11 (4.24)
-SYN-3001 : Logic optimization runtime opt =   0.48 sec, map = 875.38 sec
+SYN-3001 : Logic optimization runtime opt =   0.50 sec, map = 592.53 sec
 SYN-3001 : Mapper mapped 4285 instances into 1982 LUTs, name keeping = 63%.
 SYN-3001 : Mapper removed 1 lut buffers
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 191 (3.74), #lev = 6 (1.56)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 198 (3.78), #lev = 6 (1.56)
-SYN-3001 : Logic optimization runtime opt =   0.03 sec, map = 878.53 sec
+SYN-3001 : Logic optimization runtime opt =   0.03 sec, map = 596.19 sec
 SYN-3001 : Mapper mapped 288 instances into 198 LUTs, name keeping = 35%.
 SYN-3001 : X or Z is treated as constant in optimizing instance _al_const_x.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 2032 (3.97), #lev = 8 (5.43)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 2295 (3.63), #lev = 7 (5.33)
-SYN-3001 : Logic optimization runtime opt =   0.73 sec, map = 879.32 sec
+SYN-3001 : Logic optimization runtime opt =   0.72 sec, map = 597.05 sec
 SYN-3001 : Mapper mapped 3054 instances into 2296 LUTs, name keeping = 26%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 36 (4.00), #lev = 2 (1.94)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 36 (4.00), #lev = 2 (1.94)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 882.68 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 601.02 sec
 SYN-3001 : Mapper mapped 237 instances into 36 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 36 (4.00), #lev = 2 (1.94)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 36 (4.00), #lev = 2 (1.94)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 883.51 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 601.85 sec
 SYN-3001 : Mapper mapped 237 instances into 36 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 13619 (3.85), #lev = 11 (6.02)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 12899 (4.02), #lev = 12 (5.05)
-SYN-3001 : Logic optimization runtime opt =   5.70 sec, map = 883.62 sec
+SYN-3001 : Logic optimization runtime opt =   5.80 sec, map = 601.97 sec
 SYN-3001 : Mapper mapped 20599 instances into 12899 LUTs, name keeping = 21%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 7122 (3.71), #lev = 10 (6.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 6586 (4.09), #lev = 11 (6.00)
-SYN-3001 : Logic optimization runtime opt =   3.48 sec, map = 912.78 sec
+SYN-3001 : Logic optimization runtime opt =   3.52 sec, map = 632.16 sec
 SYN-3001 : Mapper mapped 10357 instances into 6586 LUTs, name keeping = 27%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=2, #lut = 8 (2.00), #lev = 2 (0.90)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=2, #lut = 8 (2.00), #lev = 2 (0.90)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 931.63 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 653.10 sec
 SYN-3001 : Mapper mapped 10 instances into 8 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 22 (2.82), #lev = 3 (1.79)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 22 (2.82), #lev = 3 (1.79)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 935.18 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 656.70 sec
 SYN-3001 : Mapper mapped 36 instances into 22 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 935.27 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 656.80 sec
 SYN-3001 : Mapper mapped 14 instances into 5 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 935.35 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 656.89 sec
 SYN-3001 : Mapper mapped 16 instances into 9 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=2, #lut = 8 (2.00), #lev = 2 (0.90)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=2, #lut = 8 (2.00), #lev = 2 (0.90)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 935.43 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 656.97 sec
 SYN-3001 : Mapper mapped 10 instances into 8 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 23 (2.83), #lev = 3 (1.80)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 23 (2.83), #lev = 3 (1.80)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 935.50 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 657.05 sec
 SYN-3001 : Mapper mapped 37 instances into 23 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 935.60 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 657.16 sec
 SYN-3001 : Mapper mapped 14 instances into 5 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 935.68 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 657.24 sec
 SYN-3001 : Mapper mapped 16 instances into 9 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 99 (3.90), #lev = 6 (2.57)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 92 (3.57), #lev = 5 (2.57)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 935.76 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 657.33 sec
 SYN-3001 : Mapper mapped 151 instances into 92 LUTs, name keeping = 71%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 204 (3.71), #lev = 10 (5.77)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 197 (3.56), #lev = 10 (5.63)
-SYN-3001 : Logic optimization runtime opt =   0.04 sec, map = 935.95 sec
+SYN-3001 : Logic optimization runtime opt =   0.04 sec, map = 657.54 sec
 SYN-3001 : Mapper mapped 654 instances into 197 LUTs, name keeping = 55%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=3, #lut = 10 (2.30), #lev = 2 (0.92)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=3, #lut = 10 (2.30), #lev = 2 (0.92)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 936.31 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 657.95 sec
 SYN-3001 : Mapper mapped 19 instances into 10 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 34 (4.06), #lev = 3 (1.83)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 35 (4.06), #lev = 3 (1.83)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 936.41 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 658.06 sec
 SYN-3001 : Mapper mapped 72 instances into 35 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 5 (3.20), #lev = 2 (1.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 936.54 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 658.20 sec
 SYN-3001 : Mapper mapped 14 instances into 5 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 9 (2.89), #lev = 3 (1.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 936.62 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 658.29 sec
 SYN-3001 : Mapper mapped 16 instances into 9 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 186 (3.90), #lev = 6 (3.26)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 184 (3.91), #lev = 7 (3.29)
-SYN-3001 : Logic optimization runtime opt =   0.04 sec, map = 936.70 sec
+SYN-3001 : Logic optimization runtime opt =   0.04 sec, map = 658.37 sec
 SYN-3001 : Mapper mapped 977 instances into 185 LUTs, name keeping = 34%.
 SYN-3001 : Mapper removed 1 lut buffers
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=3, #lut = 8 (2.50), #lev = 1 (0.80)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=3, #lut = 8 (2.50), #lev = 1 (0.80)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 936.98 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 658.71 sec
 SYN-3001 : Mapper mapped 16 instances into 8 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 11 (3.91), #lev = 4 (1.75)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 11 (3.91), #lev = 4 (1.75)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.08 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 658.80 sec
 SYN-3001 : Mapper mapped 33 instances into 11 LUTs, name keeping = 18%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=4, #lut = 24 (3.83), #lev = 5 (2.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 24 (3.83), #lev = 5 (2.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.16 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 658.89 sec
 SYN-3001 : Mapper mapped 69 instances into 24 LUTs, name keeping = 12%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.77), #lev = 5 (2.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.77), #lev = 5 (2.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.26 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.01 sec
 SYN-3001 : Mapper mapped 37 instances into 13 LUTs, name keeping = 23%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.77), #lev = 5 (2.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.77), #lev = 5 (2.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.34 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.10 sec
 SYN-3001 : Mapper mapped 37 instances into 13 LUTs, name keeping = 23%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.77), #lev = 5 (2.60)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.77), #lev = 5 (2.60)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.43 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.20 sec
 SYN-3001 : Mapper mapped 37 instances into 13 LUTs, name keeping = 23%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 40 (3.10), #lev = 4 (3.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 40 (3.15), #lev = 4 (3.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.51 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.29 sec
 SYN-3001 : Mapper mapped 109 instances into 40 LUTs, name keeping = 92%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 20 (2.90), #lev = 7 (5.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 20 (3.05), #lev = 7 (4.19)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.62 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.42 sec
 SYN-3001 : Mapper mapped 35 instances into 21 LUTs, name keeping = 80%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 28 (3.18), #lev = 4 (3.40)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 28 (3.18), #lev = 4 (3.40)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.72 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.53 sec
 SYN-3001 : Mapper mapped 42 instances into 28 LUTs, name keeping = 82%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 51 (3.73), #lev = 5 (2.94)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 51 (3.55), #lev = 6 (3.16)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 937.84 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 659.66 sec
 SYN-3001 : Mapper mapped 183 instances into 52 LUTs, name keeping = 69%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 937.99 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.82 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 31 (3.87), #lev = 6 (3.07)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 30 (3.83), #lev = 6 (2.93)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 938.06 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 659.89 sec
 SYN-3001 : Mapper mapped 110 instances into 30 LUTs, name keeping = 60%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 20 (2.90), #lev = 7 (5.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 20 (3.05), #lev = 7 (4.19)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.18 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.02 sec
 SYN-3001 : Mapper mapped 35 instances into 21 LUTs, name keeping = 80%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 30 (3.37), #lev = 4 (2.42)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 30 (3.40), #lev = 3 (2.33)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.28 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.14 sec
 SYN-3001 : Mapper mapped 88 instances into 31 LUTs, name keeping = 74%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 85 (3.59), #lev = 7 (3.36)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 83 (3.60), #lev = 7 (3.36)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 938.38 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 660.25 sec
 SYN-3001 : Mapper mapped 223 instances into 99 LUTs, name keeping = 82%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 41 (2.85), #lev = 5 (2.33)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 41 (2.85), #lev = 4 (1.94)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.56 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.46 sec
 SYN-3001 : Mapper mapped 72 instances into 41 LUTs, name keeping = 78%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.68 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.59 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.75 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.66 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.80 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.72 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=2, #lut = 1 (2.00), #lev = 1 (0.25)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=2, #lut = 1 (2.00), #lev = 1 (0.25)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.86 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.78 sec
 SYN-3001 : Mapper mapped 2 instances into 2 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.92 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.85 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 938.98 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 660.92 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 90 (3.90), #lev = 5 (3.83)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 96 (3.72), #lev = 5 (3.83)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 939.04 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 660.98 sec
 SYN-3001 : Mapper mapped 257 instances into 96 LUTs, name keeping = 38%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.38), #lev = 6 (2.64)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 13 (3.23), #lev = 5 (2.64)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 939.22 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 661.21 sec
 SYN-3001 : Mapper mapped 37 instances into 14 LUTs, name keeping = 64%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 11 (4.00), #lev = 3 (1.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 11 (4.00), #lev = 3 (1.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 939.33 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 661.33 sec
 SYN-3001 : Mapper mapped 29 instances into 12 LUTs, name keeping = 91%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 126 (3.65), #lev = 8 (3.69)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 125 (3.65), #lev = 8 (3.62)
-SYN-3001 : Logic optimization runtime opt =   0.03 sec, map = 939.41 sec
+SYN-3001 : Logic optimization runtime opt =   0.03 sec, map = 661.41 sec
 SYN-3001 : Mapper mapped 238 instances into 125 LUTs, name keeping = 52%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 20 (3.85), #lev = 3 (1.67)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 20 (3.85), #lev = 3 (1.67)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 939.65 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 661.69 sec
 SYN-3001 : Mapper mapped 37 instances into 20 LUTs, name keeping = 65%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 15 (3.13), #lev = 5 (3.13)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=4, #lut = 16 (2.81), #lev = 5 (3.25)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 939.77 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 661.82 sec
 SYN-3001 : Mapper mapped 48 instances into 16 LUTs, name keeping = 62%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 939.86 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 661.92 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 56 (4.70), #lev = 3 (2.52)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 56 (4.70), #lev = 3 (2.52)
-SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 939.92 sec
+SYN-3001 : Logic optimization runtime opt =   0.02 sec, map = 661.99 sec
 SYN-3001 : Mapper mapped 192 instances into 57 LUTs, name keeping = 92%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=2, #lut = 1 (2.00), #lev = 1 (0.25)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=2, #lut = 1 (2.00), #lev = 1 (0.25)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 940.09 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 662.18 sec
 SYN-3001 : Mapper mapped 2 instances into 2 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 940.17 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 662.26 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 940.23 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 662.33 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 5 (3.60), #lev = 1 (0.71)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 5 (3.60), #lev = 1 (0.71)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 940.28 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 662.39 sec
 SYN-3001 : Mapper mapped 14 instances into 5 LUTs, name keeping = 100%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 12 (3.42), #lev = 3 (1.20)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 12 (3.42), #lev = 3 (1.30)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 940.36 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 662.47 sec
 SYN-3001 : Mapper mapped 42 instances into 12 LUTs, name keeping = 66%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 940.44 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 662.56 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=5, #lut = 263 (3.92), #lev = 9 (5.64)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=5, #lut = 254 (3.80), #lev = 9 (5.75)
-SYN-3001 : Logic optimization runtime opt =   0.14 sec, map = 940.50 sec
+SYN-3001 : Logic optimization runtime opt =   0.15 sec, map = 662.62 sec
 SYN-3001 : Mapper mapped 1934 instances into 254 LUTs, name keeping = 61%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 940.97 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 663.16 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 SYN-3001 : Running gate level optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
 SYN-2551 : Post LUT mapping optimization.
 SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
-SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 941.16 sec
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map = 663.36 sec
 SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
 RUN-1002 : start command "report_area -file test_gate.area"
 RUN-1001 : standard
@@ -3886,9 +3886,9 @@ SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
 SYN-4007 : Packing 0 gate4 to BLE ...
 SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
 SYN-4012 : Packed 0 FxMUX
-RUN-1003 : finish command "optimize_gate -maparea test_gate.area" in  108.925075s wall, 108.546875s user + 1.125000s system = 109.671875s CPU (100.7%)
+RUN-1003 : finish command "optimize_gate -maparea test_gate.area" in  113.939968s wall, 114.953125s user + 1.609375s system = 116.562500s CPU (102.3%)
 
-RUN-1004 : used memory is 1232 MB, reserved memory is 1405 MB, peak memory is 2611 MB
+RUN-1004 : used memory is 1251 MB, reserved memory is 1471 MB, peak memory is 2975 MB
 RUN-1002 : start command "legalize_phy_inst"
 SYN-1011 : Flatten model top
 SYN-1011 : Flatten model Briey
@@ -4017,9 +4017,9 @@ SYN-1047 : Net: u_briey/axi_core_cpu/_zz_execute_MEMORY_STORE_DATA_RF[4] will be
 SYN-1047 : Net: u_briey/axi_core_cpu/_zz_execute_MEMORY_STORE_DATA_RF[5] will be renamed with u_briey/axi_core_cpu/execute_RS2[5] for synthesis keep.
 SYN-1047 : Net: u_briey/axi_core_cpu/_zz_execute_MEMORY_STORE_DATA_RF[6] will be renamed with u_briey/axi_core_cpu/execute_RS2[6] for synthesis keep.
 SYN-1047 : Net: u_briey/axi_core_cpu/_zz_execute_MEMORY_STORE_DATA_RF[7] will be renamed with u_briey/axi_core_cpu/execute_RS2[7] for synthesis keep.
-RUN-1003 : finish command "legalize_phy_inst" in  19.480181s wall, 19.296875s user + 0.203125s system = 19.500000s CPU (100.1%)
+RUN-1003 : finish command "legalize_phy_inst" in  16.688593s wall, 16.515625s user + 0.343750s system = 16.859375s CPU (101.0%)
 
-RUN-1004 : used memory is 2182 MB, reserved memory is 2258 MB, peak memory is 2611 MB
+RUN-1004 : used memory is 2193 MB, reserved memory is 2269 MB, peak memory is 2975 MB
 RUN-1002 : start command "read_sdc test.sdc"
 RUN-1002 : start command "create_clock -name clk24m -period 42 -waveform 0 21"
 USR-1002 : create_clock -add -name <string> -period <double> -waveform <string> target
@@ -4052,9 +4052,9 @@ RUN-1001 : Exported timing constraints
 RUN-1001 : Exported IO constraints
 RUN-1001 : Exported Inst constraints
 RUN-1001 : Exported flow parameters
-RUN-1003 : finish command "export_db test_gate.db" in  28.228184s wall, 25.718750s user + 2.234375s system = 27.953125s CPU (99.0%)
+RUN-1003 : finish command "export_db test_gate.db" in  24.865920s wall, 22.546875s user + 2.125000s system = 24.671875s CPU (99.2%)
 
-RUN-1004 : used memory is 2951 MB, reserved memory is 3043 MB, peak memory is 2951 MB
+RUN-1004 : used memory is 2956 MB, reserved memory is 3056 MB, peak memory is 2975 MB
 RUN-1002 : start command "place"
 RUN-1001 : Open license file C:/Anlogic/TD5.0.30786/license/Anlogic.lic
 RUN-1001 : Print Place Property
@@ -4098,7 +4098,7 @@ RUN-1001 : 244 nets have [11 - 20] pins
 RUN-1001 : 329 nets have [21 - 99] pins
 RUN-1001 : 142 nets have 100+ pins
 PHY-9009 ERROR: Design's mslice number = 13770, exceeds the limit 4900.
-RUN-1003 : finish command "place" in  1.497466s wall, 1.515625s user + 0.000000s system = 1.515625s CPU (101.2%)
+RUN-1003 : finish command "place" in  1.543109s wall, 1.546875s user + 0.062500s system = 1.609375s CPU (104.3%)
 
-RUN-1004 : used memory is 3006 MB, reserved memory is 3100 MB, peak memory is 3008 MB
+RUN-1004 : used memory is 3016 MB, reserved memory is 3121 MB, peak memory is 3016 MB
 >>
