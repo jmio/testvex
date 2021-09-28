@@ -12512,10 +12512,6 @@ module Axi4SharedOnChipRam_1 (
   reg [7:0] ram_symbol1 [0:4095];
   reg [7:0] ram_symbol2 [0:4095];
   reg [7:0] ram_symbol3 [0:4095];
-  reg [7:0] _zz_ramsymbol_read;
-  reg [7:0] _zz_ramsymbol_read_1;
-  reg [7:0] _zz_ramsymbol_read_2;
-  reg [7:0] _zz_ramsymbol_read_3;
 
   assign _zz_Axi4Incr_alignMask = {(2'b01 < Axi4Incr_validSize),(2'b00 < Axi4Incr_validSize)};
   assign _zz_Axi4Incr_base_1 = unburstify_buffer_transaction_addr[11 : 0];
@@ -12535,29 +12531,46 @@ module Axi4SharedOnChipRam_1 (
   assign _zz_Axi4Incr_result_10 = Axi4Incr_baseIncr[4 : 0];
   assign _zz_Axi4Incr_result_11 = Axi4Incr_base[11 : 6];
   assign _zz_Axi4Incr_result_12 = Axi4Incr_baseIncr[5 : 0];
-  always @(*) begin
-    _zz_ram_port0 = {_zz_ramsymbol_read_3, _zz_ramsymbol_read_2, _zz_ramsymbol_read_1, _zz_ramsymbol_read};
-  end
+
   always @(posedge io_axiClk) begin
     if(stage0_fire) begin
-      _zz_ramsymbol_read <= ram_symbol0[_zz_io_axi_r_payload_data];
-      _zz_ramsymbol_read_1 <= ram_symbol1[_zz_io_axi_r_payload_data];
-      _zz_ramsymbol_read_2 <= ram_symbol2[_zz_io_axi_r_payload_data];
-      _zz_ramsymbol_read_3 <= ram_symbol3[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[7:0] <= ram_symbol0[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[15:8] <= ram_symbol1[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[23:16] <= ram_symbol2[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[31:24] <= ram_symbol3[_zz_io_axi_r_payload_data];
     end
   end
 
+  //always @(posedge io_axiClk) begin
+  //  if(io_axi_w_payload_strb[0] && stage0_fire && stage0_payload_fragment_write ) begin
+  //    ram_symbol0[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[7 : 0];
+  //  end
+  //  if(io_axi_w_payload_strb[1] && stage0_fire && stage0_payload_fragment_write ) begin
+  //    ram_symbol1[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[15 : 8];
+  //  end
+  //  if(io_axi_w_payload_strb[2] && stage0_fire && stage0_payload_fragment_write ) begin
+  //    ram_symbol2[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[23 : 16];
+  //  end
+  //  if(io_axi_w_payload_strb[3] && stage0_fire && stage0_payload_fragment_write ) begin
+  //    ram_symbol3[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[31 : 24];
+  //  end
+  //end
+
+  wire a = io_axi_w_payload_strb[0] && stage0_fire && stage0_payload_fragment_write;
+  wire b = io_axi_w_payload_strb[1] && stage0_fire && stage0_payload_fragment_write;
+  wire c = io_axi_w_payload_strb[2] && stage0_fire && stage0_payload_fragment_write;
+  wire d = io_axi_w_payload_strb[3] && stage0_fire && stage0_payload_fragment_write;
   always @(posedge io_axiClk) begin
-    if(io_axi_w_payload_strb[0] && stage0_fire && stage0_payload_fragment_write ) begin
+    if(a) begin
       ram_symbol0[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[7 : 0];
     end
-    if(io_axi_w_payload_strb[1] && stage0_fire && stage0_payload_fragment_write ) begin
+    if(b) begin
       ram_symbol1[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[15 : 8];
     end
-    if(io_axi_w_payload_strb[2] && stage0_fire && stage0_payload_fragment_write ) begin
+    if(c ) begin
       ram_symbol2[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[23 : 16];
     end
-    if(io_axi_w_payload_strb[3] && stage0_fire && stage0_payload_fragment_write ) begin
+    if(d ) begin
       ram_symbol3[_zz_io_axi_r_payload_data] <= _zz_io_axi_r_payload_data_1[31 : 24];
     end
   end
@@ -12891,10 +12904,7 @@ module Axi4SharedOnChipRam (
   reg [7:0] ram_symbol1 [0:8191];
   reg [7:0] ram_symbol2 [0:8191];
   reg [7:0] ram_symbol3 [0:8191];
-  reg [7:0] _zz_ramsymbol_read;
-  reg [7:0] _zz_ramsymbol_read_1;
-  reg [7:0] _zz_ramsymbol_read_2;
-  reg [7:0] _zz_ramsymbol_read_3;
+
   assign _zz_Axi4Incr_alignMask = {(2'b01 < Axi4Incr_validSize),(2'b00 < Axi4Incr_validSize)};
   assign _zz_Axi4Incr_base_1 = unburstify_buffer_transaction_addr[11 : 0];
   assign _zz_Axi4Incr_base = _zz_Axi4Incr_base_1;
@@ -12919,15 +12929,12 @@ module Axi4SharedOnChipRam (
     $readmemh("briey/progmem2.hex",ram_symbol2);
     $readmemh("briey/progmem3.hex",ram_symbol3);
   end
-  always @(*) begin
-    _zz_ram_port0 = {_zz_ramsymbol_read_3, _zz_ramsymbol_read_2, _zz_ramsymbol_read_1, _zz_ramsymbol_read};
-  end
   always @(posedge io_axiClk) begin
     if(stage0_fire) begin
-      _zz_ramsymbol_read <= ram_symbol0[_zz_io_axi_r_payload_data];
-      _zz_ramsymbol_read_1 <= ram_symbol1[_zz_io_axi_r_payload_data];
-      _zz_ramsymbol_read_2 <= ram_symbol2[_zz_io_axi_r_payload_data];
-      _zz_ramsymbol_read_3 <= ram_symbol3[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[7:0] <= ram_symbol0[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[15:8] <= ram_symbol1[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[23:16] <= ram_symbol2[_zz_io_axi_r_payload_data];
+      _zz_ram_port0[31:24] <= ram_symbol3[_zz_io_axi_r_payload_data];
     end
   end
 
